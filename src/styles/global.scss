@@ -1,0 +1,54 @@
+// 全局样式：不在组件 scoped 内，整个页面生效
+@use './variables.scss' as *;
+
+// 字体已由 index.html 统一引入（Noto Sans SC + Noto Serif SC）
+
+// 页面整体宣纸底色，避免左右露白
+html,
+body {
+  background: $bg;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  color: $fg;
+  -webkit-font-smoothing: antialiased;
+}
+
+// 通用主按钮（宋式：方正、墨描边、朱砂填充）
+.btn {
+  font-family: inherit;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s,
+    transform 0.15s;
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+// 区块标题（宋体）
+.section__title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 16px;
+  color: $fg;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: $cinnabar;
+    margin-top: 8px;
+  }
+}

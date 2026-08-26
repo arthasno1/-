@@ -1,0 +1,20 @@
+// POMO GARDEN（番茄专注所）— 宋式美学调色板
+// 各组件通过 @use 引入，避免重复写色值
+$bg: #f3ece1; // 宣纸米白（页面底）
+$surface: #fbf7ef; // 略亮的容器
+$fg: #2c2620; // 墨黑主文字
+$muted: #93866f; // 淡墨褐弱文字
+$line: rgba(44, 38, 32, 0.1); // 淡墨分隔线
+$ink: #2c2620; // 墨
+
+// 朱砂红（主色 / 印章红），兼容旧名 $tomato
+$tomato: #b0332a;
+$tomato-light: #c85a45;
+$tomato-dark: #8a251c;
+
+// 天青 / 亚金 作为点缀
+$celadon: #7fa39b; // 天青（辅色），兼容旧名 $leaf
+$leaf-dark: #54756d;
+
+$gold: #b7976a; // 亚金（装饰线）
+$cinnabar: #b0332a; // 朱砂别名
